@@ -1,0 +1,41 @@
+body {
+	background-color: #f4f1de;
+}
+
+div {
+	background-color: #f2cc8f;
+	text-align: center;
+}
+
+div>h1 {
+	text-align: center;
+	font-size: 3.2em;
+	font-family: 'Sriracha', cursive;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #0d1f2d
+}
+
+div>a {
+	align-self: center;
+	font-size: 1.25em;
+	font-family: Tahoma;
+	color: #0d1f2d
+}
+
+h2 {
+	font-family: 'Courgette', cursive;
+	letter-spacing: 2px;
+	color: #3d405b
+}
+
+p {
+	font-family: Arial, Verdana, Sans Serif;
+	text-align: justify;
+	line-height: 25px;
+	word-spacing: 3px;
+}
+
+#heading {
+	padding: 15px;
+}

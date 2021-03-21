@@ -1,0 +1,61 @@
+body {
+	background-color: #FAAA8D;
+}
+
+h1 {
+	font-family: 'Nosifer', cursive;
+	font-size: 3.5em;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	color: black;
+}
+
+#heading {
+	background-color: #B3C5D7;
+	padding: 10px;
+}
+
+#beatinfo {
+	background-color: #FFFDED;
+}
+
+h2 {
+	font-family: 'Carter One', cursive;
+	font-size: 40px;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+a {
+	font-family: 'Karla', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-transform: uppercase;
+}
+
+#rightanchor {
+	text-align: right;
+	margin-right: 10px;
+}
+
+.a:hover {
+	color: white;
+	background-color: navy;
+	padding: 5px;
+	border-color: white;
+	border-style: solid;
+}
+
+p {
+	font-family: Arial, sans-serif;
+	text-align: justify;
+	line-height: 25px;
+	font-size: 18px;
+}
+
+h3 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 30px;
+	letter-spacing: 5px;
+}
