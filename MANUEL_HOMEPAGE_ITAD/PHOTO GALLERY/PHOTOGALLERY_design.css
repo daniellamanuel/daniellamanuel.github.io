@@ -1,0 +1,74 @@
+        body {
+            background-image: url('background.jpg');
+        }
+
+        h1 {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 3.5em;
+            letter-spacing: 2px;
+        }
+
+        #heading {
+            text-align: center;
+        }
+
+        #bodyinfo {
+            background-color: #FFFDED;
+            //padding: 3px;
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 38px;
+            letter-spacing: 3px;
+            margin-left: 30px;
+        }
+
+        #go {
+            margin-left: 30px;
+        }
+
+        #go:hover {
+            padding: 5px;
+            color: white;
+            background-color: #3D405B;
+            border-style: double;
+            border-color: white;
+        }
+
+        .familypic {
+            width: 225px;
+            border-style: solid;
+            border-color: #81B29A;
+            margin: 5px 5px;
+        }
+
+        .collegepic {
+            width: 250px;
+            border-radius: 30px;
+            border-style: solid;
+            border-color: #E07A5F;
+            margin: 5px 5px;
+        }
+
+        .highschoolpic {
+            width: 225px;
+            border-style: solid;
+            border-color: #81B29A;
+            margin: 5px 5px;
+        }
+
+        .favesingers {
+            width: 225px;
+            border-radius: 30px;
+            border-style: solid;
+            border-color: #E07A5F;
+            margin: 5px 5px;
+        }
+
+        .favealbums {
+            width: 225px;
+            border-style: solid;
+            border-color: #81B29A;
+            margin: 5px 5px;
+        }
