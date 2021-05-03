@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta charset="utf-8" >
+    <title>Pizza Order Form</title>
+    <style type="text/css">
+    	body {
+    		font-family: Tahoma;
+    		font-size: 17px;
+    	}
+
+    	table {
+    		border: 5px solid #4F6D7A;
+    		border-collapse: collapse;
+    		margin: 10px auto;
+    		width: 60%;
+    	}
+
+    	td, th {
+    		border-collapse: collapse;
+    		padding: 10px;
+    	}
+
+    	thead {
+    		background-color: #E8DAB2;
+    		letter-spacing: 2px;
+    		font-size: 40px;
+    		font-family: 'Bebas Neue', cursive;
+    		border-bottom: 2px solid #4F6D7A;
+    	}
+
+    	input[type=text], input[type=tel], input[type=email] {
+    		padding: 10px;
+    	}
+
+    	input[type=number] {
+    		padding: 5px;
+    	}
+
+    	textarea {
+    		width: 97.5%;
+    		resize: none;
+    	}
+
+    	.left {
+    		text-align: left;
+    		background-color: #C0D6DF;
+    		text-transform: uppercase;
+    		letter-spacing: 2px;
+    	}
+
+    	.bottom {
+    		border-bottom: 2px solid #4F6D7A;
+    	}
+
+    	.leftbtn {
+    		text-align: left;
+    	}
+
+    	.rightbtn {
+    		text-align: right;
+    	}
+
+    	input[type=submit], input[type=reset] {
+    		font-size: 16px;
+    		font-weight: bold;
+    		letter-spacing: 1px;
+    		cursor: pointer;
+    		padding: 10px 15px;
+    		background-color: #DD6E42;
+    		color: white;
+    	}
+    </style>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="">
+    <!--MANUEL, D.M.-->
+    <!--DATE-->
+    
+    <table>
+    	<form method="get">
+    		<thead>
+    			<tr>
+    				<th colspan="4"><img src="MANUEL_IMAGES_ITAD/Pizza.png" width="70px" style="vertical-align: middle;">&nbsp;Pizza Order Form</th>
+    			</tr>
+    		</thead>
+
+    		<tbody>
+    			<tr class="left">
+    				<th colspan="4">Customer Information</th>
+    			</tr>
+
+    			<tr>
+    				<td><label for="name">Full Name: </label></td>
+    				<td colspan="3"><input type="text" name="name" id="name" size="71" placeholder="Type your full name here" maxlength="50" autofocus required></td>
+    			</tr>
+
+    			<tr>
+    				<td><label for="address">Complete Address:</label></td>
+    				<td colspan="3"><input type="text" name="address" size="71" placeholder="Type complete address here" maxlength="60" required></td>
+    			</tr>
+
+    			<tr>
+    				<td><label for="phone">Contact Number:</label></td>
+    				<td><input type="tel" id="phone" name="phone" placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required></td>
+    				<td>Email Address:</td>
+    				<td><input type="email" name="txtEmail" id="txtEmail" required></td>
+    			</tr>
+
+    			<tr>
+    				<td>How to get to your place: (for delivery only)</td>
+    				<td colspan="3">
+    					<textarea textarea rows="8" cols="50"></textarea>
+    				</td>
+    			</tr>
+
+    			<tr class="left">
+    				<th colspan="4">Order Form</th>
+    			</tr>
+
+    			<tr>
+    				<td colspan="4">
+    					<b>Burger</b>&nbsp;<img src="MANUEL_IMAGES_ITAD/Burger.png" width="50px" style="vertical-align: middle;">
+					</td>
+    			</tr>
+
+    			<tr>
+    				<td><label for="patty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patty:</label></td>
+    				<td colspan="3">
+    					<input type="radio" name="patty" id="patty" value="single">
+    					<label for="single">Single Patty</label>
+
+    					<input type="radio" name="patty" id="patty" value="double">
+    					<label for="double">Double Patty</label>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inclusions:</td>
+    				<td colspan="3">
+    					<input type="checkbox" name="cheese" id="cheese" value="cheese">
+    					<label for="cheese">Cheese</label>
+
+    					<input type="checkbox" name="coleslaw" id="coleslaw" value="coleslaw">
+    					<label for="coleslaw">Coleslaw</label>
+
+    					<input type="checkbox" name="tomato" id="tomato" value="tomato">
+    					<label for="tomato">Tomato</label>
+
+    					<input type="checkbox" name="onion" id="onion" value="onion">
+    					<label for="onion">Onion</label>
+
+    					<input type="checkbox" name="cucumber" id="cucumber" value="cucumber">
+    					<label for="cucumber">Cucumber</label>
+
+    					<input type="checkbox" name="bacon" id="bacon" value="bacon">
+    					<label for="bacon">Bacon</label>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td><label for="bun">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choice of Bun:</label></td>
+    				<td colspan="3">
+    					<input type="radio" name="bun" id="bun" value="white">
+    					<label for="single">White Bun</label>
+
+    					<input type="radio" name="bun" id="bun" value="wheat">
+    					<label for="double">Wheat Bun</label>
+    				</td>
+    			</tr>
+
+    			<tr class="bottom">
+    				<td><label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity:</label></td>
+    				<td colspan="3"><input type="number" name="qty" id="qty" min="1" max="100" step="1"></td>
+    			</tr>
+
+    			
+    			<tr>
+    				<td colspan="4">
+    					<b>Pasta</b>&nbsp;<img src="MANUEL_IMAGES_ITAD/Pasta.png" width="50px" style="vertical-align: middle;">
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td><label for="sauce">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sauce:</label></td>
+    				<td colspan="3">
+    					<input type="checkbox" name="spaghetti" id="spaghetti" value="spaghetti">
+    					<label for="spaghetti">Spaghetti</label>
+
+    					<input type="checkbox" name="carbo" id="carbo" value="carbo">
+    					<label for="carbo">Carbonara</label>
+
+    					<input type="checkbox" name="pesto" id="pesto" value="pesto">
+    					<label for="pesto">Pesto</label>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td><label for="extra">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extra:</label></td>
+    				<td colspan="3">
+    					<input type="checkbox" name="sauce" id="sauce" value="sauce">
+    					<label for="sauce">Sauce</label>
+
+    					<input type="checkbox" name="cheese" id="cheese" value="cheese">
+    					<label for="cheese">Cheese</label>
+
+    					<input type="checkbox" name="mushroom" id="mushroom" value="mushroom">
+    					<label for="mushroom">Mushroom</label>
+
+    					<input type="checkbox" name="basil" id="basil" value="basil">
+    					<label for="basil">Basil</label>
+
+    					<input type="checkbox" name="parsley" id="parsley" value="parsley">
+    					<label for="parsley">Parsley</label>
+
+    					<input type="checkbox" name="olives" id="olives" value="olives">
+    					<label for="olives">Olives</label>
+    				</td>
+    			</tr>
+
+    			<tr class="bottom">
+    				<td><label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity (Per Box):</label></td>
+    				<td colspan="3"><input type="number" name="qty" id="qty" min="1" max="100" step="1"></td>
+    			</tr>
+
+
+    			<tr>
+    				<td colspan="4">
+    					<b>Fries</b>&nbsp;<img src="MANUEL_IMAGES_ITAD/Fries.png" width="50px" style="vertical-align: middle;">
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Size:</label></td>
+    				<td colspan="3">
+    					<input type="radio" name="size" id="size" value="small">
+    					<label for="small">Small</label>
+
+    					<input type="radio" name="size" id="size" value="medium">
+    					<label for="medium">Medium</label>
+
+    					<input type="radio" name="size" id="size" value="large">
+    					<label for="large">Large</label>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flavor:</label></td>
+    				<td colspan="3">
+    					<input type="checkbox" name="bbq" id="bbq" value="bbq">
+    					<label for="bbq">BBQ</label>
+
+    					<input type="checkbox" name="cheese" id="cheese" value="cheese">
+    					<label for="cheese">Cheese</label>
+
+    					<input type="checkbox" name="sour" id="sour" value="sour">
+    					<label for="sour">Sour Cream</label>
+    				</td>
+    			</tr>
+
+    			<tr class="bottom">
+    				<td><label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity:</label></td>
+    				<td colspan="3"><input type="number" name="qty" id="qty" min="1" max="100" step="1"></td>
+    			</tr>
+
+
+    			<tr>
+    				<td colspan="4">
+    					<b>Drinks</b>&nbsp;<img src="MANUEL_IMAGES_ITAD/Drink.png" width="30px" height="60px" style="vertical-align: middle;">
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Size:</label></td>
+    				<td colspan="3">
+    					<input type="radio" name="size" id="size" value="small">
+    					<label for="small">Small</label>
+
+    					<input type="radio" name="size" id="size" value="medium">
+    					<label for="medium">Medium</label>
+
+    					<input type="radio" name="size" id="size" value="large">
+    					<label for="large">Large</label>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td><label for="drinks">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brand:</label></td>
+    				<td colspan="3">
+    					<input type="checkbox" name="cola" id="cola" value="cola">
+    					<label for="cola">Coca Cola</label>
+
+    					<input type="checkbox" name="pepsi" id="pepsi" value="pepsi">
+    					<label for="pepsi">Pepsi</label>
+
+    					<input type="checkbox" name="sprite" id="sprite" value="sprite">
+    					<label for="sprite">Sprite</label>
+
+    					<input type="checkbox" name="royal" id="royal" value="royal">
+    					<label for="royal">Royal</label>
+
+    					<input type="checkbox" name="dew" id="dew" value="dew">
+    					<label for="dew">Mountain Dew</label>
+
+    					<input type="checkbox" name="up" id="up" value="up">
+    					<label for="up">7up</label>
+    				</td>
+    			</tr>
+
+    			<tr class="bottom">
+    				<td><label for="qty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity:</label></td>
+    				<td colspan="3"><input type="number" name="qty" id="qty" min="1" max="100" step="1"></td>
+    			</tr>
+
+    			<tr>
+    				<td><b>Method of Delivery:</b></td>
+    				<td colspan="3">
+    					<input type="radio" name="delivery" id="delivery" value="pickup" required>
+    					<label for="pickup">Pick-up</label>
+
+    					<input type="radio" name="delivery" id="delivery" value="deliver" required>
+    					<label for="deliver">Deliver</label>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td><b>Additional Notes for your Order:</b></td>
+    				<td colspan="3">
+    					<textarea textarea rows="8" cols="50" required></textarea>
+    				</td>
+    			</tr>
+
+    			<tr>
+    				<td><b>Feedback on How to Improve our Ordering Form:</b></td>
+    				<td colspan="3">
+    					<textarea textarea rows="8" cols="50"></textarea>
+    				</td>
+    			</tr>
+    		</tbody>
+
+    		<tfoot>
+    			<tr>
+    				<th colspan="2" class="rightbtn"><input type="submit" id="btn1" value="Submit"></th>
+    				<th colspan="2" class="leftbtn"><input type="reset" id="btn2" value="Clear"></th>
+    			</tr>
+    		</tfoot>
+    	</form>
+    </table>
+</body>
+</html>
